@@ -77,6 +77,8 @@ export const StyledBlock = styled(
 
     if ($color !== undefined) {
       styles.color = colors[$color] || $color;
+    } else {
+      styles.color = colors.backgroundInv;
     }
 
     if ($font !== undefined) {
